@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+	<head>
+		<title>JS CODE	WEEK 01</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<body>
+		<p id="list"></p>
+        <script>
+			
+			//create object student.
+			var alum1 = {firstName: "Peter", lastName: "Hall", passport: 1111, age:25, gender: "male"};
+			var alum2 = {firstName: "Michael", lastName: "Smith", passport: 2222, age:30,gender: "male"};
+			var alum3 = {firstName: "Luis", lastName: "Morales", passport: 3333, age:23,gender: "male"};
+			var alum4 = {firstName: "Juan", lastName: "Talvot", passport: 4444, age:26,gender: "male"};
+			var alum5 = {firstName: "Denis", lastName: "Calle", passport: 5555, age:28,gender: "female"};
+			
+			//load a list of students into array.
+			var student = [alum1, alum2, alum3, alum4];
+			
+			//insert a new student object
+			student.push(alum5);
+			
+	
+			//read each object inside of Array.
+			var x;
+			var txt = "";
+			for (i=0; i < student.length;i++){
+				var alu = student[i];
+				for (x in alu) {
+					txt += alu[x] + " ";
+				}
+				txt=txt+"<br>";
+			document.getElementById("list").innerHTML = txt;
+			}
+			
+			//convert lowercase.
+			
+			
+            var x = 10;
+            for (var i = 1; i < x; i++){
+                if(i == 3){
+                    break;
+                }
+                //window.alert(i);
+            }
+        </script>
+	</body>
+</html>
